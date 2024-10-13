@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'register',
+    'registration',
     'couriermap',
     'main',
     'django.contrib.admin',
