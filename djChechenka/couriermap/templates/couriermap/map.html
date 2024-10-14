@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2GIS Map API</title>
+        <meta name="description" content="Quickstart with 2GIS Map API" />
+        <style>
+            html,
+            body,
+            #container {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <script src="https://mapgl.2gis.com/api/js/v1"></script>
+        <script>
+            const map = new mapgl.Map('container', {
+                center: [47.227245, 39.712082],
+                zoom: 13,
+                key: '90682fe6-71be-48b1-bdd3-89bd0f0b506f',
+                style: 'c080bb6a-8134-4993-93a1-5b4d8c36a59b'
+            });
+            const marker = new mapgl.Marker(map, {
+                coordinates: [47.227245, 39.712082],
+            });
+        </script>
+    </body>
+</html>
